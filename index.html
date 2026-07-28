@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#12503C"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Fit with Baljit"/>
+<title>Fit with Baljit</title>
+<link rel="manifest" href="manifest.json"/>
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="app">
+  <header class="appbar">
+    <div class="row">
+      <div><div class="hi" id="greeting">Loading…</div><div class="sub" id="barsub">12-week plan</div></div>
+      <div class="avatar" id="avatar">B</div>
+    </div>
+    <div class="pill-day" id="pillday"><span class="dot"></span> Day 1</div>
+  </header>
+
+  <main class="screens" id="screens">
+    <section class="screen active" id="today"></section>
+    <section class="screen" id="plan"></section>
+    <section class="screen" id="track"></section>
+    <section class="screen" id="learn"></section>
+    <section class="screen" id="more"></section>
+  </main>
+
+  <nav class="tabbar">
+    <button class="tab on" data-t="today" onclick="go('today')"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Today</button>
+    <button class="tab" data-t="plan" onclick="go('plan')"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Plan</button>
+    <button class="tab" data-t="track" onclick="go('track')"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16"/><path d="M8 15l3-4 3 2 4-6"/></svg><span class="n">Track<span class="badge" id="trackBadge" style="display:none">0</span></span></button>
+    <button class="tab" data-t="learn" onclick="go('learn')"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h9v16H6a2 2 0 00-2 2z"/><path d="M15 3h3a1 1 0 011 1v15"/></svg>Learn</button>
+    <button class="tab" data-t="more" onclick="go('more')"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>More</button>
+  </nav>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- Install sheet -->
+<div class="overlay" id="overlay-install">
+  <div class="sheet">
+    <h2>Install as an app</h2>
+    <p class="lead">Add it to the home screen — it opens full-screen and works with no internet. Notifications need this step on iPhone/iPad.</p>
+    <div class="plat">On iPhone / iPad (Safari)</div>
+    <div class="step"><div class="num">1</div><div class="st">Tap the <b>Share</b> button (□↑) at the bottom of Safari.</div></div>
+    <div class="step"><div class="num">2</div><div class="st">Choose <b>Add to Home Screen</b>.</div></div>
+    <div class="step"><div class="num">3</div><div class="st">Tap <b>Add</b> — the icon appears with her other apps. Open it from there.</div></div>
+    <div class="plat">On Android (Chrome)</div>
+    <div class="step"><div class="num">1</div><div class="st">Tap the <b>⋮</b> menu, then <b>Install app</b> (or “Add to Home screen”).</div></div>
+    <button class="closeb" onclick="document.getElementById('overlay-install').classList.remove('show')">Got it</button>
+  </div>
+</div>
+
+<!-- Measurements sheet -->
+<div class="overlay" id="overlay-measure">
+  <div class="sheet">
+    <h2>Update measurements</h2>
+    <p class="lead">Take these every 2 weeks — same time of day. Inches tell the story better than the scale.</p>
+    <div id="measbody"></div>
+    <button class="closeb" id="measave">Save measurements</button>
+  </div>
+</div>
+
+<script>
+  // close overlays on backdrop tap
+  document.querySelectorAll('.overlay').forEach(o=>o.addEventListener('click',e=>{ if(e.target===o) o.classList.remove('show'); }));
+
+  // ---- OneSignal web push (fill in your App ID from the OneSignal dashboard) ----
+  // Leave as the placeholder to run WITHOUT push (in-app reminders still work).
+  window.ONESIGNAL_APP_ID = "YOUR_ONESIGNAL_APP_ID";
+  if (window.ONESIGNAL_APP_ID && window.ONESIGNAL_APP_ID !== "YOUR_ONESIGNAL_APP_ID") {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    const s = document.createElement('script');
+    s.src = "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"; s.defer = true;
+    document.head.appendChild(s);
+    window.OneSignalDeferred.push(async function (OneSignal) {
+      await OneSignal.init({ appId: window.ONESIGNAL_APP_ID, allowLocalhostAsSecureOrigin: true });
+    });
+  }
+
+  // ---- service worker (offline + heartbeat) ----
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('service-worker.js').catch(()=>{}));
+  }
+</script>
+<script src="app.js"></script>
+</body>
+</html>

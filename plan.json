@@ -1,0 +1,2121 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "name": "Baljit",
+    "title": "Fit with Baljit",
+    "startWeight": 85,
+    "goalWeight": 75,
+    "heightCm": 168,
+    "cycleDays": 14,
+    "totalDays": 84,
+    "baseline": {
+      "weight": 85,
+      "bicep": 12,
+      "chestBand": 37,
+      "chest": 44,
+      "waist": 41,
+      "belly": 44.5,
+      "hip": 47.5,
+      "thigh": 21
+    }
+  },
+  "targets": {
+    "calories": 1600,
+    "protein": 140,
+    "carbs": 150,
+    "fat": 50,
+    "water": 3,
+    "steps": 9000,
+    "sleep": 8
+  },
+  "supplements": [
+    {
+      "id": "creatine",
+      "name": "Creatine monohydrate",
+      "dose": "3–5 g",
+      "when": "lunch",
+      "freq": "daily"
+    },
+    {
+      "id": "d3daily",
+      "name": "Vitamin D3 (veg/lichen)",
+      "dose": "1000–2000 IU",
+      "when": "lunch",
+      "freq": "daily"
+    },
+    {
+      "id": "b12",
+      "name": "Vitamin B12 (methyl)",
+      "dose": "1500 mcg",
+      "when": "lunch",
+      "freq": "daily"
+    },
+    {
+      "id": "multi",
+      "name": "Supradyn Daily (multivitamin)",
+      "dose": "1 tab",
+      "when": "lunch",
+      "freq": "daily"
+    },
+    {
+      "id": "omega",
+      "name": "Algae Omega-3",
+      "dose": "250–500 mg",
+      "when": "lunch",
+      "freq": "daily"
+    },
+    {
+      "id": "vitc",
+      "name": "Vitamin C",
+      "dose": "500 mg",
+      "when": "lunch",
+      "freq": "daily"
+    },
+    {
+      "id": "glut",
+      "name": "Glutathione",
+      "dose": "500 mg",
+      "when": "lunch",
+      "freq": "daily"
+    },
+    {
+      "id": "collagen",
+      "name": "Collagen Builder (veg)",
+      "dose": "1 scoop",
+      "when": "snack",
+      "freq": "daily"
+    },
+    {
+      "id": "mag",
+      "name": "Magnesium glycinate",
+      "dose": "200–350 mg",
+      "when": "dinner",
+      "freq": "daily"
+    },
+    {
+      "id": "ashwa",
+      "name": "Ashwagandha (optional)",
+      "dose": "300–600 mg",
+      "when": "dinner",
+      "freq": "daily",
+      "optional": true
+    },
+    {
+      "id": "d3weekly",
+      "name": "Vitamin D3 sachet (weekly)",
+      "dose": "60000 IU",
+      "when": "lunch",
+      "freq": "weekly",
+      "weekday": "Sun"
+    }
+  ],
+  "waters": {
+    "methi": {
+      "name": "Methi (fenugreek) water",
+      "prep": "1 tsp seeds soaked overnight; drink the water",
+      "helps": "Digestion, satiety"
+    },
+    "jeera": {
+      "name": "Jeera (cumin) water",
+      "prep": "1 tsp soaked/boiled, strained, warm",
+      "helps": "Bloating, digestion"
+    },
+    "amla": {
+      "name": "Amla water",
+      "prep": "Amla water/juice or 1 fresh amla",
+      "helps": "Vitamin C — skin + iron"
+    },
+    "chia": {
+      "name": "Chia + lemon water",
+      "prep": "1 tsp chia soaked 10 min + lemon",
+      "helps": "Fibre + hydration"
+    },
+    "ajwain": {
+      "name": "Ajwain (carom) water",
+      "prep": "½ tsp soaked/boiled, strained",
+      "helps": "Bloating, gas"
+    },
+    "saunf": {
+      "name": "Saunf (fennel) water",
+      "prep": "1 tsp soaked overnight",
+      "helps": "Digestion, freshens"
+    },
+    "lemon": {
+      "name": "Warm lemon water",
+      "prep": "½ lemon in warm water",
+      "helps": "Hydration"
+    }
+  },
+  "workouts": {
+    "glute": {
+      "title": "Lower — Glutes",
+      "brief": "Hip thrust · single-leg hip thrust · RDL · band kickback · lateral walk · frog pumps",
+      "training": true
+    },
+    "upper": {
+      "title": "Upper — Chest / Posture / Arms",
+      "brief": "Incline press · dumbbell flyes · row · band pull-up · shoulder press · curls · tricep · core",
+      "training": true
+    },
+    "thigh": {
+      "title": "Lower — Thighs / Glutes / Calves",
+      "brief": "Goblet squat (tempo) · Bulgarian split squat · lunges · step-ups · hamstring curl · calf raises",
+      "training": true
+    },
+    "full": {
+      "title": "Full body + Core (waist)",
+      "brief": "KB/DB deadlift · push-up+row · KB swing · leg raise · side-plank woodchopper · stomach vacuum · bird-dog",
+      "training": true
+    },
+    "walk": {
+      "title": "Active recovery",
+      "brief": "Brisk walk 25–40 min + light stretch / yoga",
+      "training": false
+    },
+    "rest": {
+      "title": "Rest day",
+      "brief": "Full rest — muscle grows now. Optional gentle walk",
+      "training": false
+    }
+  },
+  "days": [
+    {
+      "n": 1,
+      "weekday": "Mon",
+      "week": 1,
+      "water": "methi",
+      "workout": "glute",
+      "training": true,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Methi (fenugreek) water",
+          "note": "Empty stomach — 1 tsp seeds soaked overnight; drink the water"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Moong-besan chilla (2) + paneer bhurji 100g + curd 150g + 1 tbsp flax",
+          "p": 38,
+          "c": 35,
+          "f": 13,
+          "kcal": 409
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Buttermilk + 4 almonds",
+          "p": 5,
+          "c": 8,
+          "f": 4,
+          "kcal": 88
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Soya chunk curry (30g dry) + moong dal + curd + salad + 2 phulka",
+          "p": 41,
+          "c": 50,
+          "f": 12,
+          "kcal": 472
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Coconut water + roasted makhana + Collagen Builder in water",
+          "p": 4,
+          "c": 17,
+          "f": 3,
+          "kcal": 111
+        },
+        {
+          "time": "5:30 PM",
+          "type": "pre",
+          "id": "pre",
+          "title": "Banana + black coffee / green tea",
+          "p": 1,
+          "c": 22,
+          "f": 0,
+          "kcal": 92
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Lower — Glutes",
+          "brief": "Hip thrust · single-leg hip thrust · RDL · band kickback · lateral walk · frog pumps",
+          "workoutKey": "glute"
+        },
+        {
+          "time": "7:15 PM",
+          "type": "post",
+          "id": "post",
+          "title": "1 scoop whey/plant protein in water + coconut water",
+          "p": 24,
+          "c": 10,
+          "f": 1,
+          "kcal": 145
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Paneer tikka 150g + masoor dal + sautéed veg + salad",
+          "p": 40,
+          "c": 22,
+          "f": 14,
+          "kcal": 374
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 153,
+        "c": 164,
+        "f": 47,
+        "kcal": 1691
+      }
+    },
+    {
+      "n": 2,
+      "weekday": "Tue",
+      "week": 1,
+      "water": "jeera",
+      "workout": "upper",
+      "training": true,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Jeera (cumin) water",
+          "note": "Empty stomach — 1 tsp soaked/boiled, strained, warm"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Overnight oats: hung curd 200g + ½ scoop whey + chia + nuts + apple",
+          "p": 42,
+          "c": 40,
+          "f": 12,
+          "kcal": 436
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Apple + a few walnuts",
+          "p": 3,
+          "c": 18,
+          "f": 5,
+          "kcal": 129
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Paneer curry 150g (toned) + moong dal + curd + tomato salad + 2 phulka",
+          "p": 43,
+          "c": 45,
+          "f": 16,
+          "kcal": 496
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Buttermilk + sprouts chaat + Collagen Builder in water",
+          "p": 7,
+          "c": 12,
+          "f": 2,
+          "kcal": 94
+        },
+        {
+          "time": "5:30 PM",
+          "type": "pre",
+          "id": "pre",
+          "title": "Banana + black coffee / green tea",
+          "p": 1,
+          "c": 22,
+          "f": 0,
+          "kcal": 92
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Upper — Chest / Posture / Arms",
+          "brief": "Incline press · dumbbell flyes · row · band pull-up · shoulder press · curls · tricep · core",
+          "workoutKey": "upper"
+        },
+        {
+          "time": "7:15 PM",
+          "type": "post",
+          "id": "post",
+          "title": "1 scoop whey/plant protein in water + coconut water",
+          "p": 24,
+          "c": 10,
+          "f": 1,
+          "kcal": 145
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Tofu bhurji 200g + moong dal + veg + salad + 1 phulka",
+          "p": 41,
+          "c": 25,
+          "f": 13,
+          "kcal": 381
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 161,
+        "c": 172,
+        "f": 49,
+        "kcal": 1773
+      }
+    },
+    {
+      "n": 3,
+      "weekday": "Wed",
+      "week": 1,
+      "water": "amla",
+      "workout": "walk",
+      "training": false,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Amla water",
+          "note": "Empty stomach — Amla water/juice or 1 fresh amla"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Tofu-paneer scramble 150g + 1 multigrain toast + milk 200ml + walnuts",
+          "p": 40,
+          "c": 32,
+          "f": 14,
+          "kcal": 414
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Roasted chana (small bowl)",
+          "p": 6,
+          "c": 12,
+          "f": 2,
+          "kcal": 90
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Rajma 1.5 katori + paneer 100g + curd + salad + small bowl brown rice",
+          "p": 40,
+          "c": 55,
+          "f": 13,
+          "kcal": 497
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Fresh fruit + green tea + Collagen Builder in water",
+          "p": 2,
+          "c": 18,
+          "f": 0,
+          "kcal": 80
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Active recovery",
+          "brief": "Brisk walk 25–40 min + light stretch / yoga",
+          "workoutKey": "walk"
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Soya chunk sabzi (30g dry) + moong dal + curd + salad + 1 phulka",
+          "p": 39,
+          "c": 26,
+          "f": 11,
+          "kcal": 359
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 127,
+        "c": 143,
+        "f": 40,
+        "kcal": 1440
+      }
+    },
+    {
+      "n": 4,
+      "weekday": "Thu",
+      "week": 1,
+      "water": "chia",
+      "workout": "thigh",
+      "training": true,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Chia + lemon water",
+          "note": "Empty stomach — 1 tsp chia soaked 10 min + lemon"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Sattu drink (sattu+water+lemon) + curd 150g + ½ scoop whey + fruit",
+          "p": 39,
+          "c": 38,
+          "f": 9,
+          "kcal": 389
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Buttermilk + 4 almonds",
+          "p": 5,
+          "c": 8,
+          "f": 4,
+          "kcal": 88
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Soya-veg pulao (40g dry soya) + moong dal + raita + amla/lemon salad",
+          "p": 40,
+          "c": 52,
+          "f": 12,
+          "kcal": 476
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Veg soup + Collagen Builder in water",
+          "p": 4,
+          "c": 12,
+          "f": 2,
+          "kcal": 82
+        },
+        {
+          "time": "5:30 PM",
+          "type": "pre",
+          "id": "pre",
+          "title": "Banana + black coffee / green tea",
+          "p": 1,
+          "c": 22,
+          "f": 0,
+          "kcal": 92
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Lower — Thighs / Glutes / Calves",
+          "brief": "Goblet squat (tempo) · Bulgarian split squat · lunges · step-ups · hamstring curl · calf raises",
+          "workoutKey": "thigh"
+        },
+        {
+          "time": "7:15 PM",
+          "type": "post",
+          "id": "post",
+          "title": "1 scoop whey/plant protein in water + coconut water",
+          "p": 24,
+          "c": 10,
+          "f": 1,
+          "kcal": 145
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Grilled paneer 150g + moong dal + palak/veg + buttermilk",
+          "p": 40,
+          "c": 20,
+          "f": 14,
+          "kcal": 366
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 153,
+        "c": 162,
+        "f": 42,
+        "kcal": 1638
+      }
+    },
+    {
+      "n": 5,
+      "weekday": "Fri",
+      "week": 1,
+      "water": "methi",
+      "workout": "full",
+      "training": true,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Methi (fenugreek) water",
+          "note": "Empty stomach — 1 tsp seeds soaked overnight; drink the water"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Greek-yogurt bowl 200g + roasted chana + seeds + banana + ½ scoop whey",
+          "p": 40,
+          "c": 38,
+          "f": 10,
+          "kcal": 402
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Apple + a few walnuts",
+          "p": 3,
+          "c": 18,
+          "f": 5,
+          "kcal": 129
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Chole 1 katori + paneer bhurji 120g + curd + salad + 2 phulka",
+          "p": 42,
+          "c": 48,
+          "f": 15,
+          "kcal": 495
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Coconut water + roasted makhana + Collagen Builder in water",
+          "p": 4,
+          "c": 17,
+          "f": 3,
+          "kcal": 111
+        },
+        {
+          "time": "5:30 PM",
+          "type": "pre",
+          "id": "pre",
+          "title": "Banana + black coffee / green tea",
+          "p": 1,
+          "c": 22,
+          "f": 0,
+          "kcal": 92
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Full body + Core (waist)",
+          "brief": "KB/DB deadlift · push-up+row · KB swing · leg raise · side-plank woodchopper · stomach vacuum · bird-dog",
+          "workoutKey": "full"
+        },
+        {
+          "time": "7:15 PM",
+          "type": "post",
+          "id": "post",
+          "title": "1 scoop whey/plant protein in water + coconut water",
+          "p": 24,
+          "c": 10,
+          "f": 1,
+          "kcal": 145
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Paneer + veg lettuce wraps 150g + masoor dal + salad",
+          "p": 40,
+          "c": 18,
+          "f": 14,
+          "kcal": 358
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 154,
+        "c": 171,
+        "f": 48,
+        "kcal": 1732
+      }
+    },
+    {
+      "n": 6,
+      "weekday": "Sat",
+      "week": 1,
+      "water": "ajwain",
+      "workout": "walk",
+      "training": false,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Ajwain (carom) water",
+          "note": "Empty stomach — ½ tsp soaked/boiled, strained"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Moong-besan chilla (2) + paneer bhurji 100g + curd 150g + 1 tbsp flax",
+          "p": 38,
+          "c": 35,
+          "f": 13,
+          "kcal": 409
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Roasted chana (small bowl)",
+          "p": 6,
+          "c": 12,
+          "f": 2,
+          "kcal": 90
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Rajma 1.5 katori + paneer 100g + curd + salad + small bowl brown rice",
+          "p": 40,
+          "c": 55,
+          "f": 13,
+          "kcal": 497
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Buttermilk + sprouts chaat + Collagen Builder in water",
+          "p": 7,
+          "c": 12,
+          "f": 2,
+          "kcal": 94
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Active recovery",
+          "brief": "Brisk walk 25–40 min + light stretch / yoga",
+          "workoutKey": "walk"
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Tofu bhurji 200g + moong dal + veg + salad + 1 phulka",
+          "p": 41,
+          "c": 25,
+          "f": 13,
+          "kcal": 381
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 132,
+        "c": 139,
+        "f": 43,
+        "kcal": 1471
+      }
+    },
+    {
+      "n": 7,
+      "weekday": "Sun",
+      "week": 1,
+      "water": "lemon",
+      "workout": "rest",
+      "training": false,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Warm lemon water",
+          "note": "Empty stomach — ½ lemon in warm water"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Overnight oats: hung curd 200g + ½ scoop whey + chia + nuts + apple",
+          "p": 42,
+          "c": 40,
+          "f": 12,
+          "kcal": 436
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Buttermilk + 4 almonds",
+          "p": 5,
+          "c": 8,
+          "f": 4,
+          "kcal": 88
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Soya chunk curry (30g dry) + moong dal + curd + salad + 2 phulka",
+          "p": 41,
+          "c": 50,
+          "f": 12,
+          "kcal": 472
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Fresh fruit + green tea + Collagen Builder in water",
+          "p": 2,
+          "c": 18,
+          "f": 0,
+          "kcal": 80
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Rest day",
+          "brief": "Full rest — muscle grows now. Optional gentle walk",
+          "workoutKey": "rest"
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Grilled paneer 150g + moong dal + palak/veg + buttermilk",
+          "p": 40,
+          "c": 20,
+          "f": 14,
+          "kcal": 366
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 130,
+        "c": 136,
+        "f": 42,
+        "kcal": 1442
+      }
+    },
+    {
+      "n": 8,
+      "weekday": "Mon",
+      "week": 2,
+      "water": "methi",
+      "workout": "glute",
+      "training": true,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Methi (fenugreek) water",
+          "note": "Empty stomach — 1 tsp seeds soaked overnight; drink the water"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Tofu-paneer scramble 150g + 1 multigrain toast + milk 200ml + walnuts",
+          "p": 40,
+          "c": 32,
+          "f": 14,
+          "kcal": 414
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Buttermilk + 4 almonds",
+          "p": 5,
+          "c": 8,
+          "f": 4,
+          "kcal": 88
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Paneer curry 150g (toned) + moong dal + curd + tomato salad + 2 phulka",
+          "p": 43,
+          "c": 45,
+          "f": 16,
+          "kcal": 496
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Coconut water + roasted makhana + Collagen Builder in water",
+          "p": 4,
+          "c": 17,
+          "f": 3,
+          "kcal": 111
+        },
+        {
+          "time": "5:30 PM",
+          "type": "pre",
+          "id": "pre",
+          "title": "Banana + black coffee / green tea",
+          "p": 1,
+          "c": 22,
+          "f": 0,
+          "kcal": 92
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Lower — Glutes",
+          "brief": "Hip thrust · single-leg hip thrust · RDL · band kickback · lateral walk · frog pumps",
+          "workoutKey": "glute"
+        },
+        {
+          "time": "7:15 PM",
+          "type": "post",
+          "id": "post",
+          "title": "1 scoop whey/plant protein in water + coconut water",
+          "p": 24,
+          "c": 10,
+          "f": 1,
+          "kcal": 145
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Paneer tikka 150g + masoor dal + sautéed veg + salad",
+          "p": 40,
+          "c": 22,
+          "f": 14,
+          "kcal": 374
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 157,
+        "c": 156,
+        "f": 52,
+        "kcal": 1720
+      }
+    },
+    {
+      "n": 9,
+      "weekday": "Tue",
+      "week": 2,
+      "water": "jeera",
+      "workout": "upper",
+      "training": true,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Jeera (cumin) water",
+          "note": "Empty stomach — 1 tsp soaked/boiled, strained, warm"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Sattu drink (sattu+water+lemon) + curd 150g + ½ scoop whey + fruit",
+          "p": 39,
+          "c": 38,
+          "f": 9,
+          "kcal": 389
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Apple + a few walnuts",
+          "p": 3,
+          "c": 18,
+          "f": 5,
+          "kcal": 129
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Soya-veg pulao (40g dry soya) + moong dal + raita + amla/lemon salad",
+          "p": 40,
+          "c": 52,
+          "f": 12,
+          "kcal": 476
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Buttermilk + sprouts chaat + Collagen Builder in water",
+          "p": 7,
+          "c": 12,
+          "f": 2,
+          "kcal": 94
+        },
+        {
+          "time": "5:30 PM",
+          "type": "pre",
+          "id": "pre",
+          "title": "Banana + black coffee / green tea",
+          "p": 1,
+          "c": 22,
+          "f": 0,
+          "kcal": 92
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Upper — Chest / Posture / Arms",
+          "brief": "Incline press · dumbbell flyes · row · band pull-up · shoulder press · curls · tricep · core",
+          "workoutKey": "upper"
+        },
+        {
+          "time": "7:15 PM",
+          "type": "post",
+          "id": "post",
+          "title": "1 scoop whey/plant protein in water + coconut water",
+          "p": 24,
+          "c": 10,
+          "f": 1,
+          "kcal": 145
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Paneer + veg lettuce wraps 150g + masoor dal + salad",
+          "p": 40,
+          "c": 18,
+          "f": 14,
+          "kcal": 358
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 154,
+        "c": 170,
+        "f": 43,
+        "kcal": 1683
+      }
+    },
+    {
+      "n": 10,
+      "weekday": "Wed",
+      "week": 2,
+      "water": "amla",
+      "workout": "walk",
+      "training": false,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Amla water",
+          "note": "Empty stomach — Amla water/juice or 1 fresh amla"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Greek-yogurt bowl 200g + roasted chana + seeds + banana + ½ scoop whey",
+          "p": 40,
+          "c": 38,
+          "f": 10,
+          "kcal": 402
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Roasted chana (small bowl)",
+          "p": 6,
+          "c": 12,
+          "f": 2,
+          "kcal": 90
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Soya chunk curry (30g dry) + moong dal + curd + salad + 2 phulka",
+          "p": 41,
+          "c": 50,
+          "f": 12,
+          "kcal": 472
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Fresh fruit + green tea + Collagen Builder in water",
+          "p": 2,
+          "c": 18,
+          "f": 0,
+          "kcal": 80
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Active recovery",
+          "brief": "Brisk walk 25–40 min + light stretch / yoga",
+          "workoutKey": "walk"
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Soya chunk sabzi (30g dry) + moong dal + curd + salad + 1 phulka",
+          "p": 39,
+          "c": 26,
+          "f": 11,
+          "kcal": 359
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 128,
+        "c": 144,
+        "f": 35,
+        "kcal": 1403
+      }
+    },
+    {
+      "n": 11,
+      "weekday": "Thu",
+      "week": 2,
+      "water": "chia",
+      "workout": "thigh",
+      "training": true,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Chia + lemon water",
+          "note": "Empty stomach — 1 tsp chia soaked 10 min + lemon"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Moong-besan chilla (2) + paneer bhurji 100g + curd 150g + 1 tbsp flax",
+          "p": 38,
+          "c": 35,
+          "f": 13,
+          "kcal": 409
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Buttermilk + 4 almonds",
+          "p": 5,
+          "c": 8,
+          "f": 4,
+          "kcal": 88
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Chole 1 katori + paneer bhurji 120g + curd + salad + 2 phulka",
+          "p": 42,
+          "c": 48,
+          "f": 15,
+          "kcal": 495
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Veg soup + Collagen Builder in water",
+          "p": 4,
+          "c": 12,
+          "f": 2,
+          "kcal": 82
+        },
+        {
+          "time": "5:30 PM",
+          "type": "pre",
+          "id": "pre",
+          "title": "Banana + black coffee / green tea",
+          "p": 1,
+          "c": 22,
+          "f": 0,
+          "kcal": 92
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Lower — Thighs / Glutes / Calves",
+          "brief": "Goblet squat (tempo) · Bulgarian split squat · lunges · step-ups · hamstring curl · calf raises",
+          "workoutKey": "thigh"
+        },
+        {
+          "time": "7:15 PM",
+          "type": "post",
+          "id": "post",
+          "title": "1 scoop whey/plant protein in water + coconut water",
+          "p": 24,
+          "c": 10,
+          "f": 1,
+          "kcal": 145
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Tofu bhurji 200g + moong dal + veg + salad + 1 phulka",
+          "p": 41,
+          "c": 25,
+          "f": 13,
+          "kcal": 381
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 155,
+        "c": 160,
+        "f": 48,
+        "kcal": 1692
+      }
+    },
+    {
+      "n": 12,
+      "weekday": "Fri",
+      "week": 2,
+      "water": "methi",
+      "workout": "full",
+      "training": true,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Methi (fenugreek) water",
+          "note": "Empty stomach — 1 tsp seeds soaked overnight; drink the water"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Overnight oats: hung curd 200g + ½ scoop whey + chia + nuts + apple",
+          "p": 42,
+          "c": 40,
+          "f": 12,
+          "kcal": 436
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Apple + a few walnuts",
+          "p": 3,
+          "c": 18,
+          "f": 5,
+          "kcal": 129
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Rajma 1.5 katori + paneer 100g + curd + salad + small bowl brown rice",
+          "p": 40,
+          "c": 55,
+          "f": 13,
+          "kcal": 497
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Coconut water + roasted makhana + Collagen Builder in water",
+          "p": 4,
+          "c": 17,
+          "f": 3,
+          "kcal": 111
+        },
+        {
+          "time": "5:30 PM",
+          "type": "pre",
+          "id": "pre",
+          "title": "Banana + black coffee / green tea",
+          "p": 1,
+          "c": 22,
+          "f": 0,
+          "kcal": 92
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Full body + Core (waist)",
+          "brief": "KB/DB deadlift · push-up+row · KB swing · leg raise · side-plank woodchopper · stomach vacuum · bird-dog",
+          "workoutKey": "full"
+        },
+        {
+          "time": "7:15 PM",
+          "type": "post",
+          "id": "post",
+          "title": "1 scoop whey/plant protein in water + coconut water",
+          "p": 24,
+          "c": 10,
+          "f": 1,
+          "kcal": 145
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Grilled paneer 150g + moong dal + palak/veg + buttermilk",
+          "p": 40,
+          "c": 20,
+          "f": 14,
+          "kcal": 366
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 154,
+        "c": 182,
+        "f": 48,
+        "kcal": 1776
+      }
+    },
+    {
+      "n": 13,
+      "weekday": "Sat",
+      "week": 2,
+      "water": "saunf",
+      "workout": "walk",
+      "training": false,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Saunf (fennel) water",
+          "note": "Empty stomach — 1 tsp soaked overnight"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Tofu-paneer scramble 150g + 1 multigrain toast + milk 200ml + walnuts",
+          "p": 40,
+          "c": 32,
+          "f": 14,
+          "kcal": 414
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Roasted chana (small bowl)",
+          "p": 6,
+          "c": 12,
+          "f": 2,
+          "kcal": 90
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Paneer curry 150g (toned) + moong dal + curd + tomato salad + 2 phulka",
+          "p": 43,
+          "c": 45,
+          "f": 16,
+          "kcal": 496
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Buttermilk + sprouts chaat + Collagen Builder in water",
+          "p": 7,
+          "c": 12,
+          "f": 2,
+          "kcal": 94
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Active recovery",
+          "brief": "Brisk walk 25–40 min + light stretch / yoga",
+          "workoutKey": "walk"
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Paneer tikka 150g + masoor dal + sautéed veg + salad",
+          "p": 40,
+          "c": 22,
+          "f": 14,
+          "kcal": 374
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 136,
+        "c": 123,
+        "f": 48,
+        "kcal": 1468
+      }
+    },
+    {
+      "n": 14,
+      "weekday": "Sun",
+      "week": 2,
+      "water": "lemon",
+      "workout": "rest",
+      "training": false,
+      "slots": [
+        {
+          "time": "6:30 AM",
+          "type": "water",
+          "id": "water",
+          "title": "Warm lemon water",
+          "note": "Empty stomach — ½ lemon in warm water"
+        },
+        {
+          "time": "8:00 AM",
+          "type": "breakfast",
+          "id": "breakfast",
+          "title": "Sattu drink (sattu+water+lemon) + curd 150g + ½ scoop whey + fruit",
+          "p": 39,
+          "c": 38,
+          "f": 9,
+          "kcal": 389
+        },
+        {
+          "time": "11:00 AM",
+          "type": "snack",
+          "id": "snack_am",
+          "title": "Buttermilk + 4 almonds",
+          "p": 5,
+          "c": 8,
+          "f": 4,
+          "kcal": 88
+        },
+        {
+          "time": "1:00 PM",
+          "type": "lunch",
+          "id": "lunch",
+          "title": "Soya-veg pulao (40g dry soya) + moong dal + raita + amla/lemon salad",
+          "p": 40,
+          "c": 52,
+          "f": 12,
+          "kcal": 476
+        },
+        {
+          "time": "1:30 PM",
+          "type": "supplements",
+          "id": "lunch_supps",
+          "title": "Lunch supplements",
+          "items": [
+            "creatine",
+            "d3daily",
+            "b12",
+            "multi",
+            "omega",
+            "vitc",
+            "glut"
+          ],
+          "detail": "Creatine monohydrate · Vitamin D3 (veg/lichen) · Vitamin B12 (methyl) · Supradyn Daily (multivitamin) · Algae Omega-3 · Vitamin C · Glutathione"
+        },
+        {
+          "time": "4:00 PM",
+          "type": "snack",
+          "id": "snack_pm",
+          "title": "Fresh fruit + green tea + Collagen Builder in water",
+          "p": 2,
+          "c": 18,
+          "f": 0,
+          "kcal": 80
+        },
+        {
+          "time": "6:00 PM",
+          "type": "workout",
+          "id": "workout",
+          "title": "Rest day",
+          "brief": "Full rest — muscle grows now. Optional gentle walk",
+          "workoutKey": "rest"
+        },
+        {
+          "time": "8:00 PM",
+          "type": "dinner",
+          "id": "dinner",
+          "title": "Paneer + veg lettuce wraps 150g + masoor dal + salad",
+          "p": 40,
+          "c": 18,
+          "f": 14,
+          "kcal": 358
+        },
+        {
+          "time": "8:30 PM",
+          "type": "supplements",
+          "id": "dinner_supps",
+          "title": "Dinner supplements",
+          "items": [
+            "mag",
+            "ashwa"
+          ],
+          "detail": "Magnesium glycinate · Ashwagandha (optional)"
+        }
+      ],
+      "totals": {
+        "p": 126,
+        "c": 134,
+        "f": 39,
+        "kcal": 1391
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "group": "Glutes",
+      "items": [
+        {
+          "name": "Dumbbell hip thrust",
+          "kind": "video",
+          "url": "https://www.youtube.com/watch?v=29OfN4ztW_g",
+          "note": "The #1 glute builder"
+        },
+        {
+          "name": "Single-leg hip thrust",
+          "kind": "video",
+          "url": "https://www.youtube.com/watch?v=L4nTaesNm0E",
+          "note": "New · more glute per side"
+        },
+        {
+          "name": "Banded glute bridge",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=banded+glute+bridge+form+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Romanian deadlift (RDL)",
+          "kind": "video",
+          "url": "https://www.youtube.com/watch?v=hQgFixeXdZo",
+          "note": "Hamstrings + glutes"
+        },
+        {
+          "name": "Standing band kickback",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=standing+banded+glute+kickback+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Banded lateral walk",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=banded+lateral+walk+form+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Frog pumps",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=frog+pumps+glute+exercise+tutorial",
+          "note": "New · burnout"
+        }
+      ]
+    },
+    {
+      "group": "Chest, Back, Shoulders & Arms",
+      "items": [
+        {
+          "name": "Incline dumbbell chest press",
+          "kind": "video",
+          "url": "https://www.youtube.com/watch?v=gl8H4QLXKTo",
+          "note": ""
+        },
+        {
+          "name": "Incline dumbbell chest fly",
+          "kind": "video",
+          "url": "https://www.youtube.com/watch?v=JSDpq14vCZ8",
+          "note": "New · upper-chest shape"
+        },
+        {
+          "name": "Incline push-ups",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=incline+push+up+beginner+form",
+          "note": ""
+        },
+        {
+          "name": "One-arm dumbbell row",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=one+arm+dumbbell+row+form+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Band-assisted pull-up",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=band+assisted+pull+up+beginner",
+          "note": ""
+        },
+        {
+          "name": "Seated dumbbell shoulder press",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=seated+dumbbell+shoulder+press+form",
+          "note": ""
+        },
+        {
+          "name": "Dumbbell bicep curls",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=dumbbell+bicep+curl+form+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Overhead tricep extension",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=dumbbell+overhead+tricep+extension+form",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "group": "Thighs & Calves",
+      "items": [
+        {
+          "name": "Goblet squat (3-sec tempo)",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=goblet+squat+form+tutorial+beginner",
+          "note": ""
+        },
+        {
+          "name": "Bulgarian split squat",
+          "kind": "video",
+          "url": "https://www.youtube.com/watch?v=rah3eJCPXHA",
+          "note": ""
+        },
+        {
+          "name": "Reverse / walking lunges",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=dumbbell+reverse+lunge+form+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Step-ups",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=dumbbell+step+up+exercise+form",
+          "note": ""
+        },
+        {
+          "name": "Hamstring curl (band)",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=hamstring+curl+at+home+band+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Calf raises",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=dumbbell+calf+raise+form+tutorial",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "group": "Full body",
+      "items": [
+        {
+          "name": "Kettlebell / dumbbell deadlift",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=kettlebell+deadlift+form+beginner",
+          "note": ""
+        },
+        {
+          "name": "Kettlebell swing",
+          "kind": "video",
+          "url": "https://www.youtube.com/watch?v=PO343opm22o",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "group": "Core / Waist (kamar)",
+      "items": [
+        {
+          "name": "Plank",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=forearm+plank+proper+form+beginner",
+          "note": ""
+        },
+        {
+          "name": "Dead bug · Bird-dog · Side plank",
+          "kind": "video",
+          "url": "https://www.youtube.com/watch?v=T1h8n4YMonY",
+          "note": "3-in-1 deep core"
+        },
+        {
+          "name": "Band woodchopper",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=band+woodchopper+oblique+exercise+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Hanging / lying leg raise",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=lying+leg+raise+form+tutorial",
+          "note": ""
+        },
+        {
+          "name": "Stomach vacuum",
+          "kind": "search",
+          "url": "https://www.youtube.com/results?search_query=stomach+vacuum+exercise+tutorial+beginner",
+          "note": "New · cinches the kamar"
+        }
+      ]
+    }
+  ],
+  "reminders": [
+    {
+      "id": "r_water",
+      "time": "06:30",
+      "label": "Morning water (empty stomach)"
+    },
+    {
+      "id": "r_lunch",
+      "time": "13:00",
+      "label": "Lunch + lunch supplements"
+    },
+    {
+      "id": "r_snack",
+      "time": "16:00",
+      "label": "Afternoon snack + Collagen Builder"
+    },
+    {
+      "id": "r_workout",
+      "time": "18:00",
+      "label": "Workout time (or walk)"
+    },
+    {
+      "id": "r_dinner",
+      "time": "20:00",
+      "label": "Dinner + dinner supplements"
+    },
+    {
+      "id": "r_d3weekly",
+      "time": "13:00",
+      "weekday": "Sun",
+      "label": "Weekly Vitamin D3 sachet"
+    }
+  ],
+  "dos": [
+    "Follow the day top→bottom",
+    "Prep breakfast + soak water the night before",
+    "Cook one base meal for the family; full-fat milk for kids",
+    "Sip water through the workout; coconut water after",
+    "Daily sunscreen + 7–8h sleep + hydration for skin",
+    "Weigh weekly; measure inches every 2 weeks"
+  ],
+  "donts": [
+    "Don't put kids on Mummy's deficit or give them adult supplements",
+    "Don't double-dose zinc/biotin",
+    "Don't treat detox waters as belly-fat burners",
+    "Don't crash below ~1,400 kcal",
+    "Don't expect spot-reduction",
+    "Don't skip strength for extra cardio"
+  ],
+  "eat": [
+    "Soya, tofu, toned-milk paneer",
+    "Dals & legumes",
+    "Curd / hung curd / buttermilk",
+    "Nuts & seeds (flax, chia, walnut)",
+    "Amla, lemon, tomato, guava",
+    "Vegetables & big salads"
+  ],
+  "avoid": [
+    "Deep-fried (pakora, samosa, puri)",
+    "Mithai, sugar in chai, cold drinks",
+    "Refined maida & bakery",
+    "Heavy cream/malai gravies",
+    "Packaged namkeen & chips",
+    "Tea/coffee right after meals"
+  ],
+  "family": [
+    "Cook ONE base dish for everyone",
+    "Kids eat to appetite — no deficit",
+    "Full-fat milk & paneer for kids",
+    "Kids: no adult supplements — ask a paediatrician"
+  ]
+}
